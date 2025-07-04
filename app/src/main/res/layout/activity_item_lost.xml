@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Item Lost"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="#009688"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Item Name"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Item Description"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Location"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnSelectDate"
+            android:text="Select Date"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tealLogin"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnSelectTime"
+            android:text="Select Time"
+            android:drawableLeft="@android:drawable/ic_menu_recent_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tealLogin"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:text="Upload Image (Optional)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tealLogin"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit"
+            android:backgroundTint="@color/tealLogin"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

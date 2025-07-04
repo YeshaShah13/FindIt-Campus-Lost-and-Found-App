@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FindIt</string>
+    <string name="default_web_client_id">YOUR_CLIENT_ID_FROM_GOOGLE_SERVICES_JSON</string>
+
+    <string-array name="categories_array">
+        <item>Electronics</item>
+        <item>Clothing</item>
+        <item>Accessories</item>
+        <item>Documents</item>
+        <item>Others</item>
+    </string-array>
+</resources>
