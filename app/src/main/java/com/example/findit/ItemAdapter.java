@@ -28,7 +28,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     }
 
     public void updateList(List<ItemModel> updatedList) {
-        this.itemList = updatedList;
+        this.itemList.clear();
+        this.itemList.addAll(updatedList);
         notifyDataSetChanged();
     }
 

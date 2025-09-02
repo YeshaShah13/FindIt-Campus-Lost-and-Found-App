@@ -129,7 +129,17 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void loadItemsFromSQLite() {
-        itemList = dbHelper.getAllItems();
+        List<ItemModel> allItems = dbHelper.getAllItems();
+
+        // Filter out null/empty items
+        itemList.clear();
+        for (ItemModel item : allItems) {
+            if (item.getName() != null && !item.getName().isEmpty() &&
+                    item.getType() != null && !item.getType().isEmpty()) {
+                itemList.add(item);
+            }
+        }
+
         originalList = new ArrayList<>(itemList);
         adapter.updateList(itemList);
     }

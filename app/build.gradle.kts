@@ -75,6 +75,16 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
+    // Firebase BOM (manages versions automatically)
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+
+// Firestore
+    implementation ("com.google.firebase:firebase-firestore")
+
+// Required
+    implementation("com.google.firebase:firebase-analytics")
+
+
 
 }
 apply(plugin = "com.google.gms.google-services")
