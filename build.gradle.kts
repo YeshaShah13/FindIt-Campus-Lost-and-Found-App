@@ -5,7 +5,8 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:8.2.2")// your existing one
-        classpath("com.google.gms:google-services:4.4.2")// 🔥 ADD THIS LINE
+        classpath("com.google.gms:google-services:4.4.3")
+
     }
 }
 plugins {
